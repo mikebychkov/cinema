@@ -1,0 +1,1 @@
+This small application is example of implementation MVC pattern using Java Servlets, JSP, JavaScript, AJAX, HTML and PostgreSQL
