@@ -3,14 +3,15 @@ CREATE TABLE seats (
    id SERIAL PRIMARY KEY,
    row int,
    number int,
-   price float
+   price float,
+   UNIQUE (row, number)
 );
 
 CREATE TABLE accounts (
   id SERIAL PRIMARY KEY,
   name TEXT,
   phone TEXT,
-  seatId int
+  seatId int UNIQUE
 );
 
 INSERT INTO seats(row, number, price) VALUES(1, 1, 1000);
